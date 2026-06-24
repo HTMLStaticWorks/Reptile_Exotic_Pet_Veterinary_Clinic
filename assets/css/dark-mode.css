@@ -146,3 +146,8 @@ body.dark-mode .back-to-top {
 body.dark-mode .back-to-top:hover {
   background-color: #fff;
 }
+
+/* Make calendar picker icon visible in dark mode */
+body.dark-mode input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1) brightness(100%);
+}
