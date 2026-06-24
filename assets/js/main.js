@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         hamburgerBtn.addEventListener('click', () => {
             offCanvasMenu.classList.toggle('active');
             document.body.classList.toggle('menu-open');
+            document.documentElement.classList.toggle('menu-open');
             
             // Transform hamburger icon to X (optional enhancement, sticking to strict layout rules)
             const spans = hamburgerBtn.querySelectorAll('span');
@@ -31,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         closeBtn.addEventListener('click', () => {
             offCanvasMenu.classList.remove('active');
             document.body.classList.remove('menu-open');
+            document.documentElement.classList.remove('menu-open');
             const spans = hamburgerBtn.querySelectorAll('span');
             spans[0].style.transform = 'none';
             spans[1].style.opacity = '1';
@@ -43,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('click', () => {
                 offCanvasMenu.classList.remove('active');
                 document.body.classList.remove('menu-open');
+                document.documentElement.classList.remove('menu-open');
                 const spans = hamburgerBtn.querySelectorAll('span');
                 spans[0].style.transform = 'none';
                 spans[1].style.opacity = '1';

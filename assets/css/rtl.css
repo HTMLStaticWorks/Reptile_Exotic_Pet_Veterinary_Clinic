@@ -31,11 +31,6 @@ html[dir="rtl"] .off-canvas-menu.active {
   left: 0;
 }
 
-/* Margin and Padding flips (if needed for specific components) */
-html[dir="rtl"] .nav-actions {
-  /* Ensure icon gap remains correct */
-}
-
 /* Form overrides if added later */
 html[dir="rtl"] input,
 html[dir="rtl"] textarea {
