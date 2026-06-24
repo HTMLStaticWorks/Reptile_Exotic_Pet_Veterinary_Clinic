@@ -479,7 +479,7 @@ section {
   border: 1px solid rgba(120, 120, 120, 0.4);
 }
 
-.off-canvas-nav a:hover {
+.off-canvas-nav a:not(.btn):hover {
   color: var(--color-accent);
 }
 
@@ -1250,7 +1250,7 @@ section {
     }
     .bento-card-main {
         grid-column: span 2;
-        grid-row: span 1;
+        grid-row: span 2;
     }
     .bento-card-wide {
         grid-column: span 2;
@@ -2282,6 +2282,18 @@ section {
   /* Reduce gap between sections on mobile */
   section {
     padding: 40px 0;
+  }
+  
+  .bento-stats-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .bento-stat-badge {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
   }
   
   .grid-cards {
