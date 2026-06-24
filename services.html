@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Reptile & Exotic Pet Veterinary Clinic</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;540;550;560;580;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M12 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3Z"></path><path d="M19 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M5 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M12 22c-4 0-7-2-7-5 0-3 2-6 7-6s7 3 7 6-3 5-7 5Z"></path></svg>
+                    Exotic<span>Vet</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li class="has-dropdown">
+                        <a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="species-care.html">Species Care</a></li>
+                    <li><a href="vet-team.html">Vet Team</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn dark-mode-toggle" aria-label="Toggle Dark Mode">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button class="icon-btn rtl-toggle" aria-label="Toggle RTL">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3L4 7l4 4"/><path d="M4 7h16"/><path d="M16 21l4-4-4-4"/><path d="M20 17H4"/></svg>
+                </button>
+                <a href="appointment-booking.html" class="btn btn-outline">Book Appointment</a>
+                <a href="login.html" class="btn btn-primary">Login</a>
+                <button class="hamburger" id="hamburgerToggle" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="off-canvas-menu" id="offCanvasMenu">
+        <nav class="off-canvas-nav">
+            <a href="index.html">Home</a>
+            <a href="home-2.html">Home 2</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="species-care.html">Species Care</a>
+            <a href="vet-team.html">Vet Team</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+            <a href="appointment-booking.html" class="btn btn-accent" style="max-width: 250px; margin-top: 24px;">Book Appointment</a>
+        </nav>
+    </div>
+
+    <!-- Small Hero Banner -->
+    <section class="hero-banner">
+        <div class="container">
+            <h1 class="reveal">Veterinary Services</h1>
+            <p class="reveal" style="color: var(--text-muted); font-size: 20px;">Comprehensive diagnostic and surgical interventions for non-traditional pets.</p>
+        </div>
+    </section>
+
+    <!-- New Primary Services Section -->
+    <section class="page-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subheading">Our Specialties</span>
+                <h2>Comprehensive Exotic Care</h2>
+                <p>Tailored medical solutions for every unique species.</p>
+            </div>
+            <div class="grid grid-cards grid-cols-3">
+                <!-- Card 1 -->
+                <div class="card reveal">
+                    <div class="card-img-wrapper" style="padding-top: 60%;">
+                        <img src="assets/images/img_python_2.png" alt="Reptile Care" class="card-img">
+                    </div>
+                    <div class="card-body" style="display: flex; flex-direction: column;">
+                        <h3 style="margin-bottom: 12px;">Reptile & Serpent Care</h3>
+                        <p style="margin-bottom: 24px;">Specialized husbandry assessments, nutritional consultations, and precise medical interventions for reptiles.</p>
+                        <div class="card-footer" style="margin-top: auto;">
+                            <a href="species-care.html" class="btn btn-outline" style="width: 100%; text-align: center; justify-content: center;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card reveal" style="transition-delay: 0.1s;">
+                    <div class="card-img-wrapper" style="padding-top: 60%;">
+                        <img src="assets/images/img_parrot_2.png" alt="Avian Medicine" class="card-img">
+                    </div>
+                    <div class="card-body" style="display: flex; flex-direction: column;">
+                        <h3 style="margin-bottom: 12px;">Avian Medicine</h3>
+                        <p style="margin-bottom: 24px;">Comprehensive diagnostics, beak and nail trimming, and respiratory treatments for all exotic bird species.</p>
+                        <div class="card-footer" style="margin-top: auto;">
+                            <a href="species-care.html" class="btn btn-outline" style="width: 100%; text-align: center; justify-content: center;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card reveal" style="transition-delay: 0.2s;">
+                    <div class="card-img-wrapper" style="padding-top: 60%;">
+                        <img src="assets/images/species_rabbit_1782138028153.png" alt="Small Mammals" class="card-img">
+                    </div>
+                    <div class="card-body" style="display: flex; flex-direction: column;">
+                        <h3 style="margin-bottom: 12px;">Small Mammal Care</h3>
+                        <p style="margin-bottom: 24px;">Expert dental care, surgical services, and wellness checks for rabbits, ferrets, guinea pigs, and rodents.</p>
+                        <div class="card-footer" style="margin-top: auto;">
+                            <a href="species-care.html" class="btn btn-outline" style="width: 100%; text-align: center; justify-content: center;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card reveal">
+                    <div class="card-img-wrapper" style="padding-top: 60%;">
+                        <img src="assets/images/species_amphibian_exam.png" alt="Amphibians" class="card-img">
+                    </div>
+                    <div class="card-body" style="display: flex; flex-direction: column;">
+                        <h3 style="margin-bottom: 12px;">Amphibian Treatment</h3>
+                        <p style="margin-bottom: 24px;">Highly sensitive cutaneous therapies, water quality analysis, and specialized environmental consulting.</p>
+                        <div class="card-footer" style="margin-top: auto;">
+                            <a href="species-care.html" class="btn btn-outline" style="width: 100%; text-align: center; justify-content: center;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="card reveal" style="transition-delay: 0.1s;">
+                    <div class="card-img-wrapper" style="padding-top: 60%;">
+                        <img src="assets/images/facility_exotic_pharmacy.png" alt="Exotic Pharmacy" class="card-img">
+                    </div>
+                    <div class="card-body" style="display: flex; flex-direction: column;">
+                        <h3 style="margin-bottom: 12px;">In-House Compounding</h3>
+                        <p style="margin-bottom: 24px;">Species-specific medication dosages uniquely formulated in our state-of-the-art exotic pet pharmacy.</p>
+                        <div class="card-footer" style="margin-top: auto;">
+                            <a href="services.html" class="btn btn-outline" style="width: 100%; text-align: center; justify-content: center;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="card reveal" style="transition-delay: 0.2s;">
+                    <div class="card-img-wrapper" style="padding-top: 60%;">
+                        <img src="assets/images/facility_icu_incubator.png" alt="Intensive Care" class="card-img">
+                    </div>
+                    <div class="card-body" style="display: flex; flex-direction: column;">
+                        <h3 style="margin-bottom: 12px;">Intensive Care Unit</h3>
+                        <p style="margin-bottom: 24px;">24/7 monitoring in climate-controlled incubators with oxygen support for critically ill exotic patients.</p>
+                        <div class="card-footer" style="margin-top: auto;">
+                            <a href="services.html" class="btn btn-outline" style="width: 100%; text-align: center; justify-content: center;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1 -->
+    <section class="page-section bg-secondary">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subheading">Core Diagnostics</span>
+                <h2>Medical Evaluation</h2>
+                <p>Establishing baseline health and identifying hidden pathologies.</p>
+            </div>
+            <div class="grid grid-cards grid-cols-3" style="gap: 32px;">
+                <div class="card reveal" style="border-top: 4px solid var(--color-primary); display: flex; flex-direction: column; align-items: center; text-align: center; padding: 48px 32px; background-color: var(--surface-color);">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; background: rgba(44, 122, 101, 0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: var(--color-primary);">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    </div>
+                    <div class="card-body" style="padding: 0;">
+                        <h3 style="margin-bottom: 16px; font-size: 24px;">Wellness Exams</h3>
+                        <p style="margin-bottom: 0;">Detailed physical and husbandry evaluations to ensure your pet is thriving in its captive environment.</p>
+                    </div>
+                </div>
+                <div class="card reveal" style="border-top: 4px solid var(--color-accent); display: flex; flex-direction: column; align-items: center; text-align: center; padding: 48px 32px; background-color: var(--surface-color); transition-delay: 0.1s;">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; background: rgba(199, 167, 91, 0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: var(--color-accent);">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/><path d="M5.52 16h12.96"/></svg>
+                    </div>
+                    <div class="card-body" style="padding: 0;">
+                        <h3 style="margin-bottom: 16px; font-size: 24px;">Bloodwork & Labs</h3>
+                        <p style="margin-bottom: 0;">In-house laboratory capabilities specifically calibrated for exotic animal biochemistry and hematology.</p>
+                    </div>
+                </div>
+                <div class="card reveal" style="border-top: 4px solid var(--color-primary); display: flex; flex-direction: column; align-items: center; text-align: center; padding: 48px 32px; background-color: var(--surface-color); transition-delay: 0.2s;">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; background: rgba(44, 122, 101, 0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: var(--color-primary);">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                    </div>
+                    <div class="card-body" style="padding: 0;">
+                        <h3 style="margin-bottom: 16px; font-size: 24px;">Microbiology</h3>
+                        <p style="margin-bottom: 0;">Targeted culturing and sensitivity testing for bacterial, fungal, and parasitic infections common in exotic species.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="page-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subheading">Advanced Care</span>
+                <h2>Specialized Interventions</h2>
+                <p>Moving beyond standard veterinary care to offer targeted exotic treatments.</p>
+            </div>
+            <div class="grid grid-cards grid-cols-2" style="gap: 40px;">
+                <div class="card reveal advanced-care-card" style="overflow: hidden; display: flex; flex-direction: column; height: 100%; border: none; background-color: var(--surface-color);">
+                    <div class="card-img-wrapper" style="padding-top: 60%; position: relative; overflow: hidden;">
+                        <img src="assets/images/species_sugar_glider_1782134665967.png" alt="Surgery" class="card-img" style="transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1); width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+                        <div class="img-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(22, 56, 50, 0.9), transparent 60%); opacity: 0.3; transition: opacity 0.4s ease;"></div>
+                        <div class="badge" style="position: absolute; top: 20px; right: 20px; background: var(--color-accent); color: var(--color-primary); font-weight: 600; padding: 6px 16px; border-radius: 20px; font-size: 13px; z-index: 2;">Surgery</div>
+                    </div>
+                    <div class="card-body" style="padding: 40px; display: flex; flex-direction: column; flex-grow: 1;">
+                        <h3 style="margin-bottom: 16px; font-size: 28px;">Exotic Anesthesia & Surgery</h3>
+                        <p style="margin-bottom: 32px; flex-grow: 1;">Safe anesthetic protocols are the foundation of our surgical department. From routine spays in rabbits to complex tumor removals in reptiles, we utilize advanced monitoring systems.</p>
+                        <div class="card-footer" style="margin-top: auto;">
+                            <a href="contact.html" class="btn btn-primary btn-hover-slide" style="width: 100%; justify-content: center; transition: all 0.3s ease;">Consult a Surgeon <svg style="margin-left:8px; transition: transform 0.3s ease;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card reveal advanced-care-card" style="overflow: hidden; display: flex; flex-direction: column; height: 100%; border: none; background-color: var(--surface-color); transition-delay: 0.1s;">
+                    <div class="card-img-wrapper" style="padding-top: 60%; position: relative; overflow: hidden;">
+                        <img src="assets/images/species_parrot_1782134654127.png" alt="Dentistry" class="card-img" style="transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1); width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+                        <div class="img-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(22, 56, 50, 0.9), transparent 60%); opacity: 0.3; transition: opacity 0.4s ease;"></div>
+                        <div class="badge" style="position: absolute; top: 20px; right: 20px; background: var(--color-accent); color: var(--color-primary); font-weight: 600; padding: 6px 16px; border-radius: 20px; font-size: 13px; z-index: 2;">Dentistry</div>
+                    </div>
+                    <div class="card-body" style="padding: 40px; display: flex; flex-direction: column; flex-grow: 1;">
+                        <h3 style="margin-bottom: 16px; font-size: 28px;">Advanced Dentistry</h3>
+                        <p style="margin-bottom: 32px; flex-grow: 1;">Critical care for small mammals. We provide life-saving dental trims and extractions for rabbits and rodents suffering from malocclusion and gastrointestinal stasis.</p>
+                        <div class="card-footer" style="margin-top: auto;">
+                            <a href="contact.html" class="btn btn-primary btn-hover-slide" style="width: 100%; justify-content: center; transition: all 0.3s ease;">Consult a Specialist <svg style="margin-left:8px; transition: transform 0.3s ease;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                .advanced-care-card {
+                    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+                    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease;
+                }
+                body.dark-mode .advanced-care-card {
+                    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+                }
+                .advanced-care-card:hover {
+                    transform: translateY(-8px);
+                    box-shadow: 0 25px 60px rgba(22, 56, 50, 0.15);
+                }
+                body.dark-mode .advanced-care-card:hover {
+                    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+                }
+                .advanced-care-card:hover .card-img {
+                    transform: scale(1.08) !important;
+                }
+                .advanced-care-card:hover .img-overlay {
+                    opacity: 0.8 !important;
+                }
+                .advanced-care-card:hover .btn-hover-slide {
+                    background-color: var(--color-accent);
+                    color: var(--color-primary);
+                    border-color: var(--color-accent);
+                }
+                .advanced-care-card:hover .btn-hover-slide svg {
+                    transform: translateX(6px) !important;
+                }
+            </style>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="page-section bg-secondary">
+        <div class="container text-center reveal">
+            <div class="section-header" style="margin-bottom: 32px;">
+                <span class="subheading">Immediate Assistance</span>
+                <h2>Emergency & Critical Care</h2>
+                <p>When minutes matter, our specialized intensive care unit is ready with oxygen chambers, incubators, and emergency life support.</p>
+            </div>
+            <a href="appointment-booking.html" class="btn btn-primary">Book an Appointment</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: 16px;">
+                        <a href="index.html">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M12 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3Z"></path><path d="M19 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M5 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M12 22c-4 0-7-2-7-5 0-3 2-6 7-6s7 3 7 6-3 5-7 5Z"></path></svg>
+                            Exotic<span>Vet</span>
+                        </a>
+                    </div>
+                    <p>A premium veterinary institution dedicated to the scientific advancement of exotic animal medicine and wildlife conservation.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a>
+                        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About the Clinic</a></li>
+                        <li><a href="vet-team.html">Our Specialists</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing & Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Patient Portal</h4>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="appointment-booking.html">Book Online</a></li>
+                        <li><a href="resources.html">Care Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><strong>Emergency:</strong> 1-800-EXO-VETS</p>
+                    <p><strong>Location:</strong> 124 Wildlife Boulevard, Conservation District</p>
+                    <p><strong>Hours:</strong> 24/7 Specialist Availability</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Reptile & Exotic Pet Veterinary Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

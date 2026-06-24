@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Resources | Reptile & Exotic Pet Veterinary Clinic</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;540;550;560;580;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    <style>
+        .form-group { margin-bottom: 24px; text-align: left; }
+        .form-control { width: 100%; padding: 16px; border: 1px solid rgba(22, 56, 50, 0.2); border-radius: 4px; font-family: inherit; font-size: 16px; background-color: var(--surface-color); color: var(--text-color); transition: border-color 0.3s; }
+        .form-control:focus { outline: none; border-color: var(--color-accent); }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M12 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3Z"></path><path d="M19 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M5 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M12 22c-4 0-7-2-7-5 0-3 2-6 7-6s7 3 7 6-3 5-7 5Z"></path></svg>
+                    Exotic<span>Vet</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li class="has-dropdown">
+                        <a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="species-care.html">Species Care</a></li>
+                    <li><a href="vet-team.html">Vet Team</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn dark-mode-toggle" aria-label="Toggle Dark Mode">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button class="icon-btn rtl-toggle" aria-label="Toggle RTL">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3L4 7l4 4"/><path d="M4 7h16"/><path d="M16 21l4-4-4-4"/><path d="M20 17H4"/></svg>
+                </button>
+                <a href="appointment-booking.html" class="btn btn-outline">Book Appointment</a>
+                <a href="login.html" class="btn btn-primary">Login</a>
+                <button class="hamburger" id="hamburgerToggle" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="off-canvas-menu" id="offCanvasMenu">
+        <nav class="off-canvas-nav">
+            <a href="index.html">Home</a>
+            <a href="home-2.html">Home 2</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="species-care.html">Species Care</a>
+            <a href="vet-team.html">Vet Team</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+            <a href="appointment-booking.html" class="btn btn-accent" style="max-width: 250px; margin-top: 24px;">Book Appointment</a>
+        </nav>
+    </div>
+
+    <section class="hero-banner">
+        <div class="container">
+            <h1 class="reveal">Educational Resources</h1>
+            <p class="reveal" style="color: var(--text-muted); font-size: 20px;">Scientific articles and care guides for the dedicated owner.</p>
+        </div>
+    </section>
+
+    <!-- Unique Section 1: Care Resource Library -->
+    <section class="page-section resource-bento" style="padding: 120px 0; background-color: var(--surface-color);">
+        <div class="container">
+            <div class="section-header reveal text-center" style="margin-bottom: 80px;">
+                <span class="subheading">Downloads</span>
+                <h2>Care Resource Library</h2>
+                <p>Peer-reviewed husbandry guides for the dedicated owner.</p>
+            </div>
+            
+            <div class="bento-grid">
+                <a href="#" class="bento-item bento-large reveal" style="background-image: url('assets/images/bento_reptile_1782215653348.png');">
+                    <div class="bento-overlay">
+                        <h3>Reptilian Habitats</h3>
+                        <p>Complete lighting and thermal mapping guides.</p>
+                        <span class="btn-download">Download PDF</span>
+                    </div>
+                </a>
+                <a href="#" class="bento-item reveal" style="background-image: url('assets/images/bento_avian_1782215667647.png'); transition-delay: 0.1s;">
+                    <div class="bento-overlay">
+                        <h3>Avian Nutrition</h3>
+                        <p>Pellet conversion tricks.</p>
+                        <span class="btn-download">Download PDF</span>
+                    </div>
+                </a>
+                <a href="#" class="bento-item reveal" style="background-image: url('assets/images/bento_mammal_1782215680776.png'); transition-delay: 0.2s;">
+                    <div class="bento-overlay">
+                        <h3>Small Mammal Care</h3>
+                        <p>Dental health guides.</p>
+                        <span class="btn-download">Download PDF</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <style>
+            .bento-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-auto-rows: 300px;
+                gap: 24px;
+            }
+            .bento-large {
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+            .bento-item {
+                border-radius: 30px;
+                overflow: hidden;
+                position: relative;
+                background-size: cover;
+                background-position: center;
+                text-decoration: none;
+                color: #fff;
+                box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            }
+            body.dark-mode .bento-item {
+                box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            }
+            .bento-overlay {
+                position: absolute;
+                top: 0; left: 0; width: 100%; height: 100%;
+                background: linear-gradient(to top, rgba(16, 24, 24, 0.9) 10%, rgba(22, 56, 50, 0.4) 60%);
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                transition: background 0.4s ease;
+            }
+            .bento-item:hover .bento-overlay {
+                background: linear-gradient(to top, rgba(16, 24, 24, 0.95) 20%, rgba(22, 56, 50, 0.6) 80%);
+            }
+            .bento-overlay h3 {
+                font-size: 28px;
+                margin-bottom: 8px;
+                transition: transform 0.3s ease;
+            }
+            .bento-overlay p {
+                font-size: 16px;
+                margin-bottom: 24px;
+                color: rgba(255,255,255,0.8);
+                transition: transform 0.3s ease;
+            }
+            .btn-download {
+                display: inline-block;
+                padding: 8px 24px;
+                background: rgba(255,255,255,0.1);
+                border: 1px solid rgba(255,255,255,0.3);
+                border-radius: 20px;
+                font-size: 14px;
+                font-weight: 600;
+                backdrop-filter: blur(4px);
+                transition: all 0.3s ease;
+                width: max-content;
+            }
+            .bento-item:hover .btn-download {
+                background: var(--color-accent);
+                color: var(--color-primary);
+                border-color: var(--color-accent);
+                transform: translateY(-5px);
+            }
+            .bento-item:hover h3, .bento-item:hover p {
+                transform: translateY(-5px);
+            }
+            @media(max-width: 991px) {
+                .bento-grid { 
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr); 
+                    grid-template-rows: 400px 300px;
+                }
+                .bento-large { 
+                    grid-column: 1 / -1; 
+                    grid-row: 1; 
+                }
+            }
+            @media(max-width: 767px) {
+                .bento-grid { 
+                    display: flex; 
+                    flex-direction: column; 
+                }
+                .bento-large { height: 350px; }
+                .bento-item { height: 300px; }
+            }
+        </style>
+    </section>
+
+    <!-- Unique Section 2: The Medical Journal -->
+    <section class="page-section journal-section" style="padding: 120px 0; background-color: var(--bg-color);">
+        <div class="container">
+            <div class="section-header reveal text-center" style="margin-bottom: 80px;">
+                <span class="subheading">Publications</span>
+                <h2>The Medical Journal</h2>
+            </div>
+            
+            <div class="journal-grid">
+                <!-- Main Feature -->
+                <div class="journal-feature reveal">
+                    <div class="j-img-box">
+                        <img src="assets/images/journal_iguana_1782214314625.png" alt="Iguana">
+                    </div>
+                    <div class="j-content">
+                        <span class="j-tag">Research</span>
+                        <h3>The Science of Bioactive Enclosures</h3>
+                        <p>How incorporating live plants, isopods, and springtails can create a self-sustaining ecosystem that dramatically improves your reptile's immune system.</p>
+                        <a href="#" class="read-more">Read Full Article &rarr;</a>
+                    </div>
+                </div>
+                <!-- Side Features -->
+                <div class="journal-side">
+                    <div class="journal-mini reveal" style="transition-delay: 0.1s;">
+                        <div class="j-img-box">
+                            <img src="assets/images/img_parrot_6.png" alt="Parrot">
+                        </div>
+                        <div class="j-content">
+                            <span class="j-tag">Avian</span>
+                            <h4>Understanding Avian Bornavirus</h4>
+                            <a href="#" class="read-more">Read &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="journal-mini reveal" style="transition-delay: 0.2s;">
+                        <div class="j-img-box">
+                            <img src="assets/images/journal_turtle_1782214326869.png" alt="Turtle">
+                        </div>
+                        <div class="j-content">
+                            <span class="j-tag">Herpetology</span>
+                            <h4>Chelonian Shell Pyramiding</h4>
+                            <a href="#" class="read-more">Read &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .journal-grid {
+                display: grid;
+                grid-template-columns: 1.5fr 1fr;
+                gap: 40px;
+            }
+            .journal-feature {
+                background: var(--surface-color);
+                border-radius: 24px;
+                overflow: hidden;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            }
+            body.dark-mode .journal-feature {
+                box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            }
+            .j-img-box {
+                overflow: hidden;
+            }
+            .j-img-box img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.8s ease;
+            }
+            .journal-feature .j-img-box { height: 400px; }
+            .journal-mini .j-img-box { height: 100%; min-height: 200px; }
+            .journal-feature:hover img, .journal-mini:hover img {
+                transform: scale(1.05);
+            }
+            .j-content { padding: 32px; }
+            .j-tag {
+                display: inline-block;
+                padding: 4px 12px;
+                background: rgba(199, 167, 91, 0.1);
+                color: var(--color-accent);
+                border-radius: 4px;
+                font-size: 12px;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-bottom: 16px;
+            }
+            .j-content h3 { font-size: 32px; margin-bottom: 16px; }
+            .j-content h4 { font-size: 20px; margin-bottom: 16px; line-height: 1.4; }
+            .j-content p { color: var(--text-muted); margin-bottom: 24px; }
+            .read-more {
+                color: var(--color-primary);
+                font-weight: 600;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+            body.dark-mode .read-more { color: var(--color-accent); }
+            .read-more:hover { color: var(--color-accent); }
+            .journal-side { display: flex; flex-direction: column; gap: 40px; }
+            .journal-mini {
+                flex: 1;
+                background: var(--surface-color);
+                border-radius: 24px;
+                overflow: hidden;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+                display: grid;
+                grid-template-columns: 1fr 1.5fr;
+            }
+            .journal-mini .j-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                box-sizing: border-box;
+            }
+            body.dark-mode .journal-mini { box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+            @media(max-width: 991px) {
+                .journal-grid { grid-template-columns: 1fr; }
+                .journal-side {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 24px;
+                }
+                .journal-mini { grid-template-columns: 1fr; }
+                .journal-mini .j-img-box { height: 200px; }
+            }
+            @media(max-width: 767px) {
+                .journal-side {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .journal-mini .j-img-box { height: 250px; }
+            }
+        </style>
+    </section>
+
+    <!-- Unique Section 3: Masterclass Videos -->
+    <section class="page-section masterclass-section" style="padding: 120px 0; background-color: var(--color-primary); color: #fff;">
+        <div class="container text-center">
+            <div class="section-header reveal" style="margin-bottom: 80px;">
+                <span class="subheading" style="color: var(--color-accent); border-color: var(--color-accent);">Tutorials</span>
+                <h2 style="color: #fff;">Video Masterclasses</h2>
+            </div>
+            
+            <div class="video-circles-grid">
+                <div class="vid-circle-wrap reveal">
+                    <div class="vid-circle">
+                        <img src="assets/images/video_rabbit_1782214342949.png" alt="Rabbit">
+                        <div class="play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                    </div>
+                    <h4>Proper Handling of Rabbits</h4>
+                </div>
+                <div class="vid-circle-wrap reveal" style="transition-delay: 0.1s;">
+                    <div class="vid-circle">
+                        <img src="assets/images/video_snake_1782214353234.png" alt="Snake">
+                        <div class="play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                    </div>
+                    <h4>Administering Oral Meds</h4>
+                </div>
+                <div class="vid-circle-wrap reveal" style="transition-delay: 0.2s;">
+                    <div class="vid-circle">
+                        <img src="assets/images/video_turtle_1782214365069.png" alt="Turtle">
+                        <div class="play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                    </div>
+                    <h4>UVB Light Testing</h4>
+                </div>
+            </div>
+        </div>
+        <style>
+            .video-circles-grid {
+                display: flex;
+                justify-content: center;
+                gap: 60px;
+                flex-wrap: wrap;
+            }
+            .vid-circle-wrap { width: 250px; cursor: pointer; }
+            .vid-circle {
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+                position: relative;
+                margin-bottom: 24px;
+                padding: 10px;
+                background: linear-gradient(45deg, transparent, transparent);
+                transition: background 0.5s ease, transform 0.5s ease;
+            }
+            .vid-circle-wrap:hover .vid-circle {
+                background: linear-gradient(45deg, var(--color-accent), transparent);
+                transform: translateY(-10px);
+                box-shadow: 0 20px 40px rgba(199, 167, 91, 0.2);
+            }
+            .vid-circle img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 4px solid var(--color-primary);
+                filter: brightness(0.8);
+                transition: filter 0.5s ease;
+            }
+            .vid-circle-wrap:hover .vid-circle img {
+                filter: brightness(1);
+            }
+            .play-btn {
+                position: absolute;
+                top: 50%; left: 50%;
+                transform: translate(-50%, -50%);
+                width: 60px; height: 60px;
+                background: var(--color-accent);
+                color: var(--color-primary);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: transform 0.3s ease;
+            }
+            .play-btn svg { width: 24px; height: 24px; margin-left: 4px; }
+            .vid-circle-wrap:hover .play-btn {
+                transform: translate(-50%, -50%) scale(1.1);
+            }
+            .vid-circle-wrap h4 { font-size: 18px; color: #fff; }
+        </style>
+    </section>
+
+    <!-- Unique Section 4: FAQ Accordion -->
+    <section class="page-section faq-section" style="padding: 120px 0; background-color: var(--surface-color);">
+        <div class="container">
+            <div class="section-header reveal text-center" style="margin-bottom: 80px;">
+                <span class="subheading">Support</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-container reveal">
+                <details class="faq-item" open>
+                    <summary class="faq-summary">Do you handle after-hours wildlife emergencies?</summary>
+                    <div class="faq-content">
+                        <p>Yes, we have a 24/7 specialist availability protocol. However, we ask that you call our emergency hotline (1-800-EXO-VETS) before arriving so our team can prepare the specific critical care incubator or antivenom required for your species.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-summary">Are specialist fees higher than regular vet visits?</summary>
+                    <div class="faq-content">
+                        <p>Because our physicians are board-certified and utilize highly specialized micro-surgical equipment, our baseline consultation fees are higher than a standard dog/cat clinic. However, we provide transparent estimates before any diagnostics are run.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-summary">Do you offer Telemedicine for habitat reviews?</summary>
+                    <div class="faq-content">
+                        <p>Absolutely. We highly recommend our virtual habitat consultations. Using video chat, our technicians can evaluate your enclosure's thermal gradients, humidity setups, and UV lighting placement from the comfort of your home.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-summary">Do you accept exotic pet insurance?</summary>
+                    <div class="faq-content">
+                        <p>Yes, we are in-network with Nationwide Exotic Pet Insurance and several other specialized providers. Please bring your policy documentation to your first visit.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <style>
+            .faq-container {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            .faq-item {
+                background: var(--bg-color);
+                border: 1px solid rgba(22, 56, 50, 0.1);
+                border-radius: 16px;
+                margin-bottom: 16px;
+                overflow: hidden;
+                transition: box-shadow 0.3s ease;
+            }
+            body.dark-mode .faq-item {
+                border-color: rgba(255,255,255,0.05);
+            }
+            .faq-item:hover {
+                box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            }
+            body.dark-mode .faq-item:hover {
+                box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            }
+            .faq-summary {
+                padding: 24px 32px;
+                font-size: 18px;
+                font-weight: 600;
+                cursor: pointer;
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: var(--text-color);
+            }
+            .faq-summary::-webkit-details-marker { display: none; }
+            .faq-summary::after {
+                content: '+';
+                font-size: 24px;
+                color: var(--color-accent);
+                transition: transform 0.3s ease;
+            }
+            details[open] .faq-summary::after {
+                content: '-';
+                transform: rotate(180deg);
+            }
+            .faq-content {
+                padding: 0 32px 32px 32px;
+                color: var(--text-muted);
+                line-height: 1.6;
+                animation: fadeDown 0.4s ease-in-out;
+            }
+            @keyframes fadeDown {
+                from { opacity: 0; transform: translateY(-10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        </style>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: 16px;">
+                        <a href="index.html">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M12 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3Z"></path><path d="M19 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M5 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M12 22c-4 0-7-2-7-5 0-3 2-6 7-6s7 3 7 6-3 5-7 5Z"></path></svg>
+                            Exotic<span>Vet</span>
+                        </a>
+                    </div>
+                    <p>A premium veterinary institution dedicated to the scientific advancement of exotic animal medicine and wildlife conservation.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a>
+                        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About the Clinic</a></li>
+                        <li><a href="vet-team.html">Our Specialists</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing & Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Patient Portal</h4>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="appointment-booking.html">Book Online</a></li>
+                        <li><a href="resources.html">Care Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><strong>Emergency:</strong> 1-800-EXO-VETS</p>
+                    <p><strong>Location:</strong> 124 Wildlife Boulevard, Conservation District</p>
+                    <p><strong>Hours:</strong> 24/7 Specialist Availability</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Reptile & Exotic Pet Veterinary Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

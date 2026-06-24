@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment | Reptile & Exotic Pet Veterinary Clinic</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;540;550;560;580;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    <style>
+        .form-group { margin-bottom: 24px; text-align: left; }
+        .form-label { display: block; margin-bottom: 8px; font-weight: 500; color: var(--color-primary); }
+        body.dark-mode .form-label { color: var(--color-secondary); }
+        .form-control { width: 100%; padding: 16px; border: 1px solid rgba(22, 56, 50, 0.2); border-radius: 4px; font-family: inherit; font-size: 16px; background-color: var(--surface-color); color: var(--text-color); transition: border-color 0.3s; }
+        body.dark-mode .form-control { border: 1px solid rgba(255, 255, 255, 0.2); }
+        .form-control:focus { outline: none; border-color: var(--color-accent); }
+        select.form-control { 
+            appearance: none; -webkit-appearance: none; -moz-appearance: none;
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+            background-size: 16px;
+            padding-right: 48px;
+        }
+        .booking-card { max-width: 1000px; margin: 0 auto; padding: 48px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); border: 1px solid rgba(22, 56, 50, 0.1); border-radius: 12px; }
+        body.dark-mode .booking-card { border: 1px solid rgba(255, 255, 255, 0.1); background-color: var(--color-dark-card); }
+        
+        @media(max-width: 767px) {
+            .booking-grid {
+                grid-template-columns: 1fr !important;
+            }
+            .booking-card {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M12 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3Z"></path><path d="M19 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M5 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M12 22c-4 0-7-2-7-5 0-3 2-6 7-6s7 3 7 6-3 5-7 5Z"></path></svg>
+                    Exotic<span>Vet</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li class="has-dropdown">
+                        <a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="species-care.html">Species Care</a></li>
+                    <li><a href="vet-team.html">Vet Team</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn dark-mode-toggle" aria-label="Toggle Dark Mode">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button class="icon-btn rtl-toggle" aria-label="Toggle RTL">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3L4 7l4 4"/><path d="M4 7h16"/><path d="M16 21l4-4-4-4"/><path d="M20 17H4"/></svg>
+                </button>
+                <a href="appointment-booking.html" class="btn btn-outline">Book Appointment</a>
+                <a href="login.html" class="btn btn-primary">Login</a>
+                <button class="hamburger" id="hamburgerToggle" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="off-canvas-menu" id="offCanvasMenu">
+        <nav class="off-canvas-nav">
+            <a href="index.html">Home</a>
+            <a href="home-2.html">Home 2</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="species-care.html">Species Care</a>
+            <a href="vet-team.html">Vet Team</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+            <a href="appointment-booking.html" class="btn btn-accent" style="max-width: 250px; margin-top: 24px;">Book Appointment</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-banner" style="padding-bottom: 60px;">
+        <div class="container text-center">
+            <h1 class="reveal">Schedule a Visit</h1>
+            <p class="reveal" style="color: var(--text-muted); font-size: 20px; max-width: 600px; margin: 0 auto;">Please provide details about your pet to help us prepare for your visit.</p>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="page-section" style="padding-top: 0; margin-top: -40px;">
+        <div class="container">
+            <div class="card booking-card reveal">
+                <form action="#" method="POST">
+                    
+                    <div class="grid booking-grid" style="grid-template-columns: repeat(2, 1fr); gap: 24px;">
+                        <div class="form-group">
+                            <label class="form-label">Owner Name</label>
+                            <input type="text" class="form-control" placeholder="Jane Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" placeholder="jane@example.com" required>
+                        </div>
+                    </div>
+                    
+                    <div class="grid booking-grid" style="grid-template-columns: repeat(2, 1fr); gap: 24px;">
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" placeholder="(555) 123-4567" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Patient Status</label>
+                            <select class="form-control" required>
+                                <option value="" disabled selected>Select Status</option>
+                                <option value="new">New Patient</option>
+                                <option value="returning">Returning Patient</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <h3 style="margin: 32px 0 24px; text-align: left; font-size: 1.5rem; color: var(--color-primary);">Pet Information</h3>
+                    
+                    <div class="grid booking-grid" style="grid-template-columns: repeat(3, 1fr); gap: 24px;">
+                        <div class="form-group">
+                            <label class="form-label">Pet's Name</label>
+                            <input type="text" class="form-control" placeholder="e.g. Iggy" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Species/Breed</label>
+                            <input type="text" class="form-control" placeholder="e.g. Green Iguana" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Age/Weight (Optional)</label>
+                            <input type="text" class="form-control" placeholder="e.g. 4 yrs, 2 kg">
+                        </div>
+                    </div>
+
+                    <h3 style="margin: 32px 0 24px; text-align: left; font-size: 1.5rem; color: var(--color-primary);">Appointment Details</h3>
+
+                    <div class="grid booking-grid" style="grid-template-columns: repeat(2, 1fr); gap: 24px;">
+                        <div class="form-group">
+                            <label class="form-label">Preferred Date</label>
+                            <input type="date" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Preferred Doctor (Optional)</label>
+                            <select class="form-control">
+                                <option value="">No Preference</option>
+                                <option value="sterling">Dr. Sterling (Reptiles/Amphibians)</option>
+                                <option value="halloway">Dr. Halloway (Avian)</option>
+                                <option value="jenkins">Dr. Jenkins (Small Mammals)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Reason for Visit</label>
+                        <textarea class="form-control" rows="4" placeholder="Briefly describe any symptoms or specify if this is a wellness exam..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: 16px;">
+                        <a href="index.html">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M12 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3Z"></path><path d="M19 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M5 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M12 22c-4 0-7-2-7-5 0-3 2-6 7-6s7 3 7 6-3 5-7 5Z"></path></svg>
+                            Exotic<span>Vet</span>
+                        </a>
+                    </div>
+                    <p>A premium veterinary institution dedicated to the scientific advancement of exotic animal medicine and wildlife conservation.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About the Clinic</a></li>
+                        <li><a href="vet-team.html">Our Specialists</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing & Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Patient Portal</h4>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="appointment-booking.html">Book Online</a></li>
+                        <li><a href="resources.html">Care Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><strong>Emergency:</strong> 1-800-EXO-VETS</p>
+                    <p><strong>Location:</strong> 124 Wildlife Boulevard, Conservation District</p>
+                    <p><strong>Hours:</strong> 24/7 Specialist Availability</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Reptile & Exotic Pet Veterinary Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

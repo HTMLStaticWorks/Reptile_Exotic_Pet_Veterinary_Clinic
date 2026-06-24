@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing & Packages | Reptile & Exotic Pet Veterinary Clinic</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;540;550;560;580;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">Exotic<span>Vet</span></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li class="has-dropdown">
+                        <a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="species-care.html">Species Care</a></li>
+                    <li><a href="vet-team.html">Vet Team</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="appointment-booking.html" class="btn btn-primary">Book Appointment</a>
+                <button class="icon-btn dark-mode-toggle" aria-label="Toggle Dark Mode">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button class="icon-btn rtl-toggle" aria-label="Toggle RTL">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3L4 7l4 4"/><path d="M4 7h16"/><path d="M16 21l4-4-4-4"/><path d="M20 17H4"/></svg>
+                </button>
+                <button class="hamburger" id="hamburgerToggle" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="off-canvas-menu" id="offCanvasMenu">
+        <nav class="off-canvas-nav">
+            <a href="index.html">Home</a>
+            <a href="home-2.html">Home 2</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="species-care.html">Species Care</a>
+            <a href="vet-team.html">Vet Team</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+            <a href="appointment-booking.html" class="btn btn-accent" style="max-width: 250px; margin-top: 24px;">Book Appointment</a>
+        </nav>
+    </div>
+
+    <!-- Small Hero Banner -->
+    <section class="hero-banner">
+        <div class="container">
+            <h1 class="reveal">Transparent Pricing</h1>
+            <p class="reveal" style="color: var(--text-muted); font-size: 20px;">Clear, straightforward rates for premium exotic care.</p>
+        </div>
+    </section>
+
+    <!-- Section 1 -->
+    <section class="page-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subheading">Base Rates</span>
+                <h2>Consultation Fees</h2>
+                <p>Standard specialist evaluation rates.</p>
+            </div>
+            <div class="grid grid-cards" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="card reveal" style="text-align: center;">
+                    <div class="card-body">
+                        <h3 style="color: var(--color-accent); font-size: 40px; margin-bottom: 16px;">$125</h3>
+                        <h4 style="margin-bottom: 16px;">Wellness Exam</h4>
+                        <p>Comprehensive 45-minute physical and husbandry review for healthy pets.</p>
+                    </div>
+                </div>
+                <div class="card reveal" style="text-align: center; border: 2px solid var(--color-primary); transform: scale(1.05); z-index: 2;">
+                    <div class="card-body">
+                        <h3 style="color: var(--color-primary); font-size: 40px; margin-bottom: 16px;">$185</h3>
+                        <h4 style="margin-bottom: 16px;">Sick Pet Consult</h4>
+                        <p>Detailed evaluation and initial diagnostic planning for ill patients.</p>
+                        <a href="appointment-booking.html" class="btn btn-primary" style="margin-top: 24px;">Book Now</a>
+                    </div>
+                </div>
+                <div class="card reveal" style="text-align: center;">
+                    <div class="card-body">
+                        <h3 style="color: var(--color-accent); font-size: 40px; margin-bottom: 16px;">$250</h3>
+                        <h4 style="margin-bottom: 16px;">Emergency Triage</h4>
+                        <p>Immediate 24/7 priority access to critical care specialists.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="page-section bg-secondary">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subheading">Preventative Care</span>
+                <h2>Wellness Packages</h2>
+                <p>Bundled preventative services designed for complete peace of mind.</p>
+            </div>
+            <div class="flex-cards">
+                <div class="card reveal" style="flex: 1 1 400px; max-width: 600px;">
+                    <div class="card-body">
+                        <h3>Comprehensive Avian Package</h3>
+                        <p>Includes annual wellness exam, complete blood count (CBC), chemistry panel, and gram stains for crop and cloaca.</p>
+                        <hr style="border-top: 1px solid rgba(22, 56, 50, 0.1); margin: 24px 0;">
+                        <h4 style="color: var(--color-primary);">$350 annually</h4>
+                    </div>
+                </div>
+                <div class="card reveal" style="flex: 1 1 400px; max-width: 600px; transition-delay: 0.1s;">
+                    <div class="card-body">
+                        <h3>Reptile Baseline Package</h3>
+                        <p>Includes annual wellness exam, fecal parasite screening, and basic blood chemistry to monitor organ function.</p>
+                        <hr style="border-top: 1px solid rgba(22, 56, 50, 0.1); margin: 24px 0;">
+                        <h4 style="color: var(--color-primary);">$280 annually</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="page-section">
+        <div class="container text-center reveal">
+            <div class="section-header" style="margin-bottom: 32px;">
+                <span class="subheading">Financial Policy</span>
+                <h2>Insurance & Payment</h2>
+                <p>We believe financial concerns should never stand in the way of life-saving care. We accept all major credit cards, CareCredit, and directly process claims with Nationwide Exotic Pet Insurance.</p>
+            </div>
+            <a href="contact.html" class="btn btn-outline">Contact Billing Department</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 style="color: var(--color-secondary); margin-bottom: 16px;">Exotic<span>Vet</span></h3>
+                    <p>A premium veterinary institution dedicated to the scientific advancement of exotic animal medicine and wildlife conservation.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a>
+                        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About the Clinic</a></li>
+                        <li><a href="vet-team.html">Our Specialists</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing & Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Patient Portal</h4>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="appointment-booking.html">Book Online</a></li>
+                        <li><a href="resources.html">Care Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><strong>Emergency:</strong> 1-800-EXO-VETS</p>
+                    <p><strong>Location:</strong> 124 Wildlife Boulevard, Conservation District</p>
+                    <p><strong>Hours:</strong> 24/7 Specialist Availability</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Reptile & Exotic Pet Veterinary Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

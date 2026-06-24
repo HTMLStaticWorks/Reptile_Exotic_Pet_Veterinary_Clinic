@@ -1,0 +1,148 @@
+/* ==========================================================================
+   Dark Mode Definitions
+   ========================================================================== */
+
+/* 
+  When the 'dark-mode' class is applied to the body or html, 
+  these variables override the light mode defaults in style.css
+*/
+
+body.dark-mode {
+  --bg-color: var(--color-dark-bg); /* #101818 */
+  --surface-color: var(--color-dark-card); /* #182424 */
+  --text-color: var(--color-dark-text); /* #F4F7F6 */
+  --text-muted: rgba(244, 247, 246, 0.7); /* Lighter muted text for readability */
+}
+
+/* Override Explicit Section Backgrounds */
+body.dark-mode .bg-secondary {
+  background: #131d1d; /* Slightly different shade of dark for contrast */
+}
+
+body.dark-mode .legacy-section,
+body.dark-mode .facility-showcase-section,
+body.dark-mode .premium-bento-section,
+body.dark-mode .medical-philosophy-section,
+body.dark-mode .herp-showcase,
+body.dark-mode .mammal-accordion {
+  background: var(--bg-color);
+}
+
+/* Fix Stats and Badges */
+body.dark-mode .bento-stat-badge,
+body.dark-mode .floating-indicator {
+  background: rgba(24, 36, 36, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--color-dark-text);
+}
+
+body.dark-mode .bento-stat-badge span,
+body.dark-mode .floating-indicator {
+  color: var(--color-accent);
+}
+
+
+/* Ensure headings adapt */
+body.dark-mode h1,
+body.dark-mode .h1,
+body.dark-mode h2,
+body.dark-mode .h2,
+body.dark-mode h3,
+body.dark-mode .h3,
+body.dark-mode h4,
+body.dark-mode .h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: var(--color-secondary); /* Soft Botanical Ivory stands out nicely on Dark BG */
+}
+
+/* Override header background when scrolled */
+body.dark-mode .site-header.scrolled {
+  background-color: var(--color-dark-card);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Nav links in header */
+body.dark-mode .main-nav a {
+  color: var(--color-secondary);
+}
+
+/* Cards dark mode styling */
+body.dark-mode .card {
+  background-color: var(--color-dark-card);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .card:hover {
+  box-shadow: 0 20px 40px rgba(199, 167, 91, 0.1); /* Subtle accent glow */
+}
+
+/* Button overrides for dark mode contrast if needed */
+body.dark-mode .btn-outline {
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
+}
+
+body.dark-mode .btn-outline:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+/* Icon button for theme toggle */
+body.dark-mode .icon-btn {
+  background: var(--surface-color);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-color);
+}
+
+body.dark-mode .icon-btn:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #ffffff;
+}
+
+body.dark-mode .hamburger span {
+  background-color: var(--color-secondary);
+}
+
+/* Footer Dark Mode Overrides */
+body.dark-mode .site-footer {
+  border-top-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .footer-bottom {
+  border-top-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .footer-socials a {
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Footer override for dark mode */
+body.dark-mode .site-footer {
+  background-color: #050505;
+}
+
+/* Testimonial Card override */
+body.dark-mode .testimonial-card {
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Facility Feature Separators override */
+body.dark-mode .facility-features {
+    border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .facility-feature-item {
+    border-right-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Back to Top Override */
+body.dark-mode .back-to-top {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
+body.dark-mode .back-to-top:hover {
+  background-color: #fff;
+}

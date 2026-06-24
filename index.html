@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specialized Care For Extraordinary Pets | Reptile & Exotic Pet Veterinary Clinic</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <meta name="description" content="Premium veterinary care specializing in reptiles, birds, amphibians, and exotic mammals. A high-end medical center for your extraordinary pets.">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;540;550;560;580;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css?v=4">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M12 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3Z"></path><path d="M19 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M5 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M12 22c-4 0-7-2-7-5 0-3 2-6 7-6s7 3 7 6-3 5-7 5Z"></path></svg>
+                    Exotic<span>Vet</span>
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li class="has-dropdown">
+                        <a>Home</a>
+                        <ul class="dropdown">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="species-care.html">Species Care</a></li>
+                    <li><a href="vet-team.html">Vet Team</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-actions">
+                <button class="icon-btn dark-mode-toggle" aria-label="Toggle Dark Mode">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button class="icon-btn rtl-toggle" aria-label="Toggle RTL">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3L4 7l4 4"/><path d="M4 7h16"/><path d="M16 21l4-4-4-4"/><path d="M20 17H4"/></svg>
+                </button>
+                <a href="appointment-booking.html" class="btn btn-outline">Book Appointment</a>
+                <a href="login.html" class="btn btn-primary">Login</a>
+                <button class="hamburger" id="hamburgerToggle" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Off-Canvas Menu for Mobile/Tablet -->
+    <div class="off-canvas-menu" id="offCanvasMenu">
+        <nav class="off-canvas-nav">
+            <a href="index.html">Home</a>
+            <a href="home-2.html">Home 2</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="species-care.html">Species Care</a>
+            <a href="vet-team.html">Vet Team</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+
+            <a href="appointment-booking.html" class="btn btn-accent" style="max-width: 250px; margin-top: 24px;">Book Appointment</a>
+        </nav>
+    </div>
+
+    <!-- Home 1: Viewport Hero -->
+    <section class="hero-viewport split-hero" style="position: relative; overflow: hidden;">
+        <!-- Ambient Background Orbs -->
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2"></div>
+        <div class="container hero-split-container" style="position: relative; z-index: 2;">
+            <div class="hero-content reveal text-left">
+                <h1 style="line-height: 1.2; margin-bottom: 16px;">Specialized Care For <br/><span class="magic-text">Extraordinary Pets</span></h1>
+                <p>A premium, scientific approach to the health and wellness of your exotic companions.</p>
+                <div class="hero-cta" style="justify-content: flex-start;">
+                    <a href="appointment-booking.html" class="btn btn-accent">Book Appointment</a>
+                    <a href="species-care.html" class="btn btn-primary">Explore Species Care</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper reveal anim-habitat-ecosystem">
+                <img src="assets/images/hero_reptile_vet_1782134618929.png" alt="Reptile Veterinarian" class="hero-right-img">
+            </div>
+        </div>
+
+        <style>
+            .magic-text {
+                background: linear-gradient(
+                    to right,
+                    var(--color-primary) 20%,
+                    var(--color-accent) 40%,
+                    var(--color-accent) 60%,
+                    var(--color-primary) 80%
+                );
+                background-size: 200% auto;
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                animation: shine 4s linear infinite;
+                display: inline-block;
+            }
+
+            @keyframes shine {
+                to {
+                    background-position: 200% center;
+                }
+            }
+
+            body.dark-mode .magic-text {
+                background: linear-gradient(
+                    to right,
+                    #f4f7f6 20%,
+                    var(--color-accent) 40%,
+                    var(--color-accent) 60%,
+                    #f4f7f6 80%
+                );
+                background-size: 200% auto;
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
+
+            .bg-orb {
+                position: absolute;
+                border-radius: 50%;
+                filter: blur(90px);
+                opacity: 0.35;
+                z-index: 1;
+                pointer-events: none;
+                animation: floatOrb 20s infinite ease-in-out alternate;
+            }
+            .orb-1 {
+                width: 600px;
+                height: 600px;
+                background-color: var(--color-primary);
+                top: -150px;
+                left: -150px;
+            }
+            .orb-2 {
+                width: 500px;
+                height: 500px;
+                background-color: var(--color-accent);
+                bottom: -100px;
+                right: -100px;
+                animation-delay: -5s;
+                animation-duration: 25s;
+            }
+            body.dark-mode .bg-orb {
+                opacity: 0.15;
+            }
+            @keyframes floatOrb {
+                0% { transform: translate(0, 0) scale(1); }
+                100% { transform: translate(150px, 80px) scale(1.1); }
+            }
+
+            .hero-viewport.split-hero {
+                background-color: var(--surface-color);
+                justify-content: flex-start;
+                padding-top: 40px; 
+            }
+            .dark-mode .hero-viewport.split-hero {
+                background-color: var(--bg-color);
+            }
+            .hero-viewport.split-hero::before {
+                content: '';
+                position: absolute;
+                top: 0; left: 0; width: 100%; height: 100%;
+                background-color: var(--surface-color);
+                opacity: 0.95;
+                z-index: 1;
+            }
+            .dark-mode .hero-viewport.split-hero::before {
+                background-color: var(--bg-color);
+            }
+            .hero-split-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 100%;
+                position: relative;
+                z-index: 10;
+                width: 100%;
+                gap: 60px;
+            }
+            .hero-viewport.split-hero .hero-content {
+                text-align: left;
+                flex: 1;
+                max-width: 600px;
+                padding: 0;
+                color: var(--color-text);
+            }
+            .hero-viewport.split-hero .hero-content h1 {
+                color: var(--color-primary);
+            }
+            .hero-viewport.split-hero .hero-content p {
+                color: var(--text-muted);
+            }
+            .hero-image-wrapper {
+                flex: 1;
+                height: auto;
+                align-self: center;
+                position: relative;
+                border-radius: 32px;
+                overflow: hidden;
+                box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+            }
+            .hero-right-img {
+                width: 100%;
+                height: auto;
+                max-height: 700px;
+                object-fit: contain;
+                display: block;
+            }
+            .anim-habitat-ecosystem .hero-right-img {
+                transform: scale(1.1);
+                animation: slowPan 30s infinite alternate linear;
+            }
+            .hero-viewport.split-hero::after {
+                display: none;
+            }
+            @media (max-width: 992px) {
+                .hero-viewport.split-hero {
+                    height: auto;
+                    min-height: 100vh;
+                }
+                .hero-split-container {
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    padding-top: 60px;
+                    padding-bottom: 60px;
+                }
+                .hero-viewport.split-hero .hero-content {
+                    text-align: center;
+                    margin-bottom: 40px;
+                }
+                .hero-viewport.split-hero .hero-cta {
+                    justify-content: center !important;
+                }
+                .hero-image-wrapper {
+                    height: 400px;
+                    width: 100%;
+                    min-height: auto;
+                }
+            }
+        </style>
+    </section>
+
+    <!-- Section 1.5: Species Specialties (Bento Grid) -->
+    <section class="premium-bento-section" id="expertise">
+        <!-- Floating Animated Background Elements -->
+        <div class="bento-bg-mesh"></div>
+        <div class="bento-particle bento-particle-1"></div>
+        <div class="bento-particle bento-particle-2"></div>
+        <div class="bento-particle bento-particle-3"></div>
+        
+        <div class="container" style="position: relative; z-index: 5; max-width: 1400px;">
+            
+            <div class="section-header reveal" style="max-width: 800px; margin: 0 auto 64px;">
+                <span class="subheading" style="margin-bottom: 20px;">Species-Specific Veterinary Excellence</span>
+                <h2 class="bento-heading">
+                    Specialized Care For Extraordinary Companions
+                    <div class="heading-underline"></div>
+                </h2>
+                
+                <div class="bento-stats-row">
+                    <div class="bento-stat-badge"><span>50+</span> Exotic Species Treated</div>
+                    <div class="bento-stat-badge"><span>15+</span> Years Combined Experience</div>
+                    <div class="bento-stat-badge"><span>24/7</span> Emergency Support</div>
+                </div>
+            </div>
+            
+            <!-- Bento Grid Container -->
+            <div class="bento-grid" id="bentoGrid">
+                
+                <!-- Main Card (Spans 2 rows on Desktop) -->
+                <div class="bento-card bento-card-main reveal" data-delay="0">
+                    <div class="bento-card-bg" style="background-image: url('assets/images/species_python_1782134679049.png');"></div>
+                    <div class="bento-card-overlay"></div>
+                    <div class="bento-light-sweep"></div>
+                    <div class="bento-card-content">
+                        <div class="bento-icon-circle">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/></svg>
+                        </div>
+                        <h3>Reptiles & Amphibians</h3>
+                        <p>From complex metabolic diseases to nutritional balancing, our herpetology experts provide advanced, life-saving care for snakes, lizards, turtles, and frogs.</p>
+                        <a href="species-care.html" class="bento-btn">Explore Care</a>
+                    </div>
+                </div>
+
+                <!-- Secondary Card 1 -->
+                <div class="bento-card reveal" style="transition-delay: 0.1s;">
+                    <div class="bento-card-bg" style="background-image: url('assets/images/species_parrot_1782134654127.png');"></div>
+                    <div class="bento-card-overlay"></div>
+                    <div class="bento-light-sweep"></div>
+                    <div class="bento-card-content">
+                        <div class="bento-icon-circle">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3>Avian Medicine</h3>
+                        <p>Specialized diagnostics and treatments for all bird species, focusing on preventative care and surgical interventions.</p>
+                        <a href="species-care.html" class="bento-btn">Explore Care</a>
+                    </div>
+                </div>
+
+                <!-- Secondary Card 2 -->
+                <div class="bento-card reveal" style="transition-delay: 0.2s;">
+                    <div class="bento-card-bg" style="background-image: url('assets/images/species_sugar_glider_1782134665967.png');"></div>
+                    <div class="bento-card-overlay"></div>
+                    <div class="bento-light-sweep"></div>
+                    <div class="bento-card-content">
+                        <div class="bento-icon-circle">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                        </div>
+                        <h3>Exotic Mammals</h3>
+                        <p>Dedicated care protocols for ferrets, rabbits, rodents, and hedgehogs requiring specialized anesthetic approaches.</p>
+                        <a href="species-care.html" class="bento-btn">Explore Care</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div style="margin-top: 64px; display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <a href="appointment-booking.html" class="btn btn-primary" style="flex: 1; min-width: 280px; max-width: 360px;">Schedule an Exotic Pet Consultation</a>
+                <a href="services.html" class="btn btn-outline" style="flex: 1; min-width: 280px; max-width: 360px;">Explore All Specialties</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section 2: Veterinary Expertise -->
+    <section class="page-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subheading">Our Facility</span>
+                <h2>Veterinary Expertise</h2>
+                <p>State-of-the-art diagnostic and surgical suites designed specifically for exotic animal physiology.</p>
+            </div>
+            
+            <div class="facility-features">
+                <div class="facility-feature-item reveal">
+                    <span class="feature-number">01</span>
+                    <h3>Advanced Imaging</h3>
+                    <p>High-resolution ultrasound, digital radiography, and CT scanning tailored to accurately diagnose conditions in animals of all sizes.</p>
+                </div>
+                <div class="facility-feature-item reveal" style="transition-delay: 0.1s;">
+                    <span class="feature-number">02</span>
+                    <h3>Micro-Surgery</h3>
+                    <p>Specialized microsurgical instruments and magnification equipment allow our surgeons to perform intricate procedures on the smallest patients safely.</p>
+                </div>
+                <div class="facility-feature-item reveal" style="transition-delay: 0.2s;">
+                    <span class="feature-number">03</span>
+                    <h3>Endoscopy</h3>
+                    <p>Minimally invasive diagnostic and surgical endoscopy units specifically designed to navigate the unique anatomy of birds and reptiles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Wellness Programs -->
+    <section class="page-section bg-secondary">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subheading">Prevention</span>
+                <h2>Wellness Programs</h2>
+                <p>Proactive health management is critical for exotic species, as they naturally mask signs of illness.</p>
+            </div>
+            
+            <div class="prevention-split">
+                <!-- Panel 1 -->
+                <div class="prev-panel reveal" id="prevPanel1">
+                    <div class="prev-glow"></div>
+                    <div class="prev-bg" style="background-image: url('assets/images/img_python_3.png');"></div>
+                    <div class="prev-content">
+                        <div class="prev-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        </div>
+                        <h3>Annual Examinations</h3>
+                        <p>Comprehensive physical assessments, weight tracking, and preventative bloodwork to establish healthy baselines and detect early pathology.</p>
+                        <a href="services.html" class="prev-link">Explore Programs &rarr;</a>
+                    </div>
+                </div>
+                <!-- Panel 2 -->
+                <div class="prev-panel reveal" style="transition-delay: 0.1s;" id="prevPanel2">
+                    <div class="prev-glow"></div>
+                    <div class="prev-bg" style="background-image: url('assets/images/img_parrot_3.png');"></div>
+                    <div class="prev-content">
+                        <div class="prev-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                        <h3>Nutritional Counseling</h3>
+                        <p>Dietary evaluations to prevent the common metabolic and nutritional diseases that frequently afflict captive exotic animals.</p>
+                        <a href="services.html" class="prev-link">Explore Programs &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3.5: Exotic Pharmacy -->
+    <section class="page-section" style="padding-top: 0;">
+        <div class="container">
+            <div class="pharmacy-layout reveal">
+                <div class="pharmacy-image">
+                    <img src="assets/images/facility_exotic_pharmacy.png" alt="Exotic Pet Pharmacy" class="radius-lg shadow-xl">
+                    <div class="pharmacy-badge">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        <span>Custom Compounding</span>
+                    </div>
+                </div>
+                <div class="pharmacy-content">
+                    <span class="subheading" style="color: var(--color-primary);">Medication & Support</span>
+                    <h2 style="margin-bottom: 24px;">In-House Exotic Pharmacy</h2>
+                    <p style="margin-bottom: 32px; font-size: 1.1rem; color: var(--text-muted);">Standard veterinary medications are rarely suitable for exotic species. Our specialized on-site pharmacy is equipped to provide highly specific formulations and dosages tailored precisely to the unique metabolic rates of reptiles, birds, and small mammals.</p>
+                    
+                    <ul class="pharmacy-list">
+                        <li>
+                            <div class="list-icon">✓</div>
+                            <div>
+                                <strong>Custom Compounding</strong>
+                                <p>We create palatable liquid suspensions for animals that refuse pills.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-icon">✓</div>
+                            <div>
+                                <strong>Species-Specific Dosages</strong>
+                                <p>Micro-dosing capabilities for patients weighing only a few grams.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-icon">✓</div>
+                            <div>
+                                <strong>Emergency Stock</strong>
+                                <p>Immediate access to life-saving antivenoms and specialized antibiotics.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .pharmacy-layout {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 60px;
+                align-items: center;
+                background: linear-gradient(145deg, var(--color-surface), var(--color-background));
+                padding: 60px;
+                border-radius: 32px;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+                border: 1px solid rgba(0,0,0,0.05);
+            }
+            .dark-mode .pharmacy-layout {
+                border-color: rgba(255,255,255,0.05);
+                box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            }
+            .pharmacy-image {
+                position: relative;
+            }
+            .pharmacy-image img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 24px;
+                display: block;
+                transition: transform 0.5s ease;
+            }
+            .pharmacy-image:hover img {
+                transform: scale(1.02);
+            }
+            .pharmacy-badge {
+                position: absolute;
+                bottom: -20px;
+                right: -20px;
+                background: var(--color-primary);
+                color: #fff;
+                padding: 20px 32px;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                font-weight: 600;
+                font-size: 1.1rem;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+                animation: floatSlow 4s ease-in-out infinite;
+            }
+            .pharmacy-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .pharmacy-list li {
+                display: flex;
+                gap: 16px;
+                margin-bottom: 24px;
+            }
+            .list-icon {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                background: rgba(197, 168, 128, 0.1);
+                color: var(--color-primary);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                flex-shrink: 0;
+            }
+            .pharmacy-list strong {
+                display: block;
+                font-size: 1.1rem;
+                margin-bottom: 4px;
+                color: var(--text-color);
+            }
+            .pharmacy-list p {
+                margin: 0;
+                font-size: 0.95rem;
+                color: var(--text-muted);
+            }
+            @media (max-width: 992px) {
+                .pharmacy-layout {
+                    grid-template-columns: 1fr;
+                    padding: 40px 20px;
+                    text-align: center;
+                }
+                .pharmacy-badge {
+                    bottom: -20px;
+                    right: 50%;
+                    transform: translateX(50%);
+                    width: max-content;
+                }
+                .pharmacy-list li {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .pharmacy-list .list-icon {
+                    margin-bottom: 8px;
+                }
+            }
+        </style>
+    </section>
+
+    <!-- Section 4: Success Stories -->
+    <section class="page-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subheading">Outcomes</span>
+                <h2>Success Stories</h2>
+                <p>Realizing the profound impact of specialized exotic care.</p>
+            </div>
+            <div class="testimonial-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card reveal">
+                    <div class="stars">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#C5A880"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#C5A880"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#C5A880"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#C5A880"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#C5A880"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"The team's extensive knowledge of avian respiratory systems saved my Macaw. The facility feels like a high-end research center, providing absolute peace of mind."</p>
+                    <div class="testimonial-author">
+                        <img src="assets/images/avatar_dr_sterling.png" alt="Dr. E. Sterling" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Dr. E. Sterling</h4>
+                            <span>Zoological Director</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card reveal" style="transition-delay: 0.1s;">
+                    <div class="stars">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#C5A880"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#C5A880"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#C5A880"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#C5A880"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#C5A880"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"When our iguana faced severe metabolic bone disease, standard vets couldn't help. The precise nutritional and environmental adjustments prescribed here were life-saving."</p>
+                    <div class="testimonial-author">
+                        <img src="assets/images/avatar_j_halloway.png" alt="J. Halloway" class="author-avatar">
+                        <div class="author-info">
+                            <h4>J. Halloway</h4>
+                            <span>Herpetology Enthusiast</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card reveal" style="transition-delay: 0.2s;">
+                    <div class="stars">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#C5A880"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#C5A880"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#C5A880"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#C5A880"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#C5A880"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"Finding a specialized exotic mammal surgeon was incredibly stressful until we found this clinic. The microsurgery they performed on our ferret was flawless and recovery was swift."</p>
+                    <div class="testimonial-author">
+                        <img src="assets/images/avatar_sarah_jenkins.png" alt="Sarah Jenkins" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Sarah Jenkins</h4>
+                            <span>Exotic Mammal Rescue</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Appointment Process -->
+    <section class="page-section bg-secondary">
+        <div class="container text-center reveal">
+            <div class="section-header" style="margin-bottom: 32px;">
+                <span class="subheading">Begin the Journey</span>
+                <h2>Appointment Process</h2>
+                <p>Scheduling a consultation is streamlined to ensure immediate attention for critical cases.</p>
+            </div>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <a href="appointment-booking.html" class="btn btn-primary" style="flex: 1; min-width: 280px; max-width: 360px;">Schedule a Visit</a>
+                <a href="contact.html" class="btn btn-outline" style="flex: 1; min-width: 280px; max-width: 360px;">Contact the Clinic</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: 16px;">
+                        <a href="index.html">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M12 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3Z"></path><path d="M19 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M5 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M12 22c-4 0-7-2-7-5 0-3 2-6 7-6s7 3 7 6-3 5-7 5Z"></path></svg>
+                            Exotic<span>Vet</span>
+                        </a>
+                    </div>
+                    <p>A premium veterinary institution dedicated to the scientific advancement of exotic animal medicine and wildlife conservation.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a>
+                        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About the Clinic</a></li>
+                        <li><a href="vet-team.html">Our Specialists</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing & Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Patient Portal</h4>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="appointment-booking.html">Book Online</a></li>
+                        <li><a href="resources.html">Care Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><strong>Emergency:</strong> 1-800-EXO-VETS</p>
+                    <p><strong>Location:</strong> 124 Wildlife Boulevard, Conservation District</p>
+                    <p><strong>Hours:</strong> 24/7 Specialist Availability</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Reptile & Exotic Pet Veterinary Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

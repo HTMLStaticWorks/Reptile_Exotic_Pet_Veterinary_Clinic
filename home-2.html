@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Discovery | Reptile & Exotic Pet Veterinary Clinic</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <meta name="description" content="Embark on a wildlife discovery journey at our premium exotic veterinary clinic.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;540;550;560;580;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css?v=4">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M12 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3Z"></path><path d="M19 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M5 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M12 22c-4 0-7-2-7-5 0-3 2-6 7-6s7 3 7 6-3 5-7 5Z"></path></svg>
+                    Exotic<span>Vet</span>
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li class="has-dropdown">
+                        <a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="species-care.html">Species Care</a></li>
+                    <li><a href="vet-team.html">Vet Team</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-actions">
+                <button class="icon-btn dark-mode-toggle" aria-label="Toggle Dark Mode">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button class="icon-btn rtl-toggle" aria-label="Toggle RTL">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3L4 7l4 4"/><path d="M4 7h16"/><path d="M16 21l4-4-4-4"/><path d="M20 17H4"/></svg>
+                </button>
+                <a href="appointment-booking.html" class="btn btn-outline">Book Appointment</a>
+                <a href="login.html" class="btn btn-primary">Login</a>
+                <button class="hamburger" id="hamburgerToggle" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="off-canvas-menu" id="offCanvasMenu">
+        <nav class="off-canvas-nav">
+            <a href="index.html">Home</a>
+            <a href="home-2.html">Home 2</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="species-care.html">Species Care</a>
+            <a href="vet-team.html">Vet Team</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+            <a href="appointment-booking.html" class="btn btn-accent" style="max-width: 250px; margin-top: 24px;">Book Appointment</a>
+        </nav>
+    </div>
+
+    <!-- Home 2: Viewport Hero (Wildlife Discovery Journey) -->
+    <section class="hero-viewport anim-wildlife-discovery">
+        <img src="assets/images/hero_wildlife_discovery_1782134631916.png" alt="Wildlife Discovery" class="hero-bg-layer">
+        <div class="hero-content reveal">
+            <h1>A Scientific Wildlife Discovery Journey</h1>
+            <p>Elevating exotic animal medicine through cutting-edge research, compassionate care, and unparalleled expertise.</p>
+            <div class="hero-cta">
+                <a href="appointment-booking.html" class="btn btn-primary">Schedule Consultation</a>
+                <a href="about.html" class="btn btn-outline" style="border-color: var(--color-secondary); color: var(--color-secondary);">Tour Our Facility</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Reptile Care -->
+    <section class="page-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subheading">Herpetology</span>
+                <h2>Reptile Care</h2>
+                <p>Advanced diagnostic and surgical interventions for complex reptilian cases.</p>
+            </div>
+            <div class="herp-showcase">
+                <div class="herp-item reveal" data-tilt>
+                    <div class="herp-img-box">
+                        <img src="assets/images/img_python_2.png" alt="Python Care" class="tilt-image">
+                    </div>
+                    <div class="herp-content">
+                        <h3>Serpent Medicine</h3>
+                        <p>Specialized handling and medical protocols for venomous and non-venomous constrictors, addressing respiratory and dermatological conditions.</p>
+                        <a href="species-care.html" class="btn btn-outline" style="margin-top: 24px;">Read More</a>
+                    </div>
+                </div>
+                <div class="herp-item reveal" data-tilt>
+                    <div class="herp-img-box">
+                        <img src="assets/images/hero_reptile_vet_1782134618929.png" alt="Lizard Care" class="tilt-image">
+                    </div>
+                    <div class="herp-content">
+                        <h3>Lizards & Chelonians</h3>
+                        <p>Comprehensive care for metabolic bone disease, impactions, and shell fractures, utilizing advanced imaging techniques.</p>
+                        <a href="species-care.html" class="btn btn-outline" style="margin-top: 24px;">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Bird Care -->
+    <section class="page-section bg-secondary">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subheading">Avian Medicine</span>
+                <h2>Bird Care</h2>
+                <p>Delicate and precise medical care for the intricate physiology of exotic birds.</p>
+            </div>
+            <div class="flex-cards">
+                <div class="card reveal" style="flex: 1 1 100%; max-width: 100%;">
+                    <div class="card-body avian-card-body">
+                        <div class="card-img-wrapper avian-card-img">
+                            <img src="assets/images/img_parrot_2.png" alt="Avian Exam" class="card-img">
+                        </div>
+                        <div class="avian-card-content">
+                            <h3>Comprehensive Avian Diagnostics</h3>
+                            <p>Birds mask illness remarkably well. Our state-of-the-art diagnostic suite allows us to detect subtle biochemical changes before they become critical. We offer endoscopic sexing, advanced respiratory panels, and behavioral counseling for feather plucking.</p>
+                            <a href="species-care.html" class="btn btn-primary" style="margin-top: 24px;">Discover Avian Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .avian-card-body {
+                flex-direction: row;
+                align-items: center;
+                gap: 32px;
+                padding: 0;
+            }
+            .avian-card-img {
+                flex: 1;
+                padding-top: 0;
+                height: 400px;
+                width: 100%;
+            }
+            .avian-card-content {
+                flex: 1;
+                padding: 32px;
+            }
+            @media (max-width: 991px) {
+                .avian-card-body {
+                    flex-direction: column !important;
+                    align-items: stretch !important;
+                    gap: 0 !important;
+                }
+                .avian-card-img {
+                    height: 280px !important;
+                    flex: none !important;
+                }
+                .avian-card-content {
+                    text-align: center !important;
+                }
+            }
+        </style>
+    </section>
+
+    <!-- Section 3: Exotic Mammal Care -->
+    <section class="page-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subheading">Small Mammals</span>
+                <h2>Exotic Mammal Care</h2>
+                <p>Tailored anesthetic and surgical approaches for uniquely challenging patients.</p>
+            </div>
+            <div class="mammal-accordion reveal">
+                <div class="mammal-panel" style="background-image: url('assets/images/species_sugar_glider_1782134665967.png');">
+                    <div class="panel-content">
+                        <h3>Sugar Gliders</h3>
+                        <p>Expert nutritional planning and dental care for these highly specialized marsupials.</p>
+                    </div>
+                </div>
+                <div class="mammal-panel" style="background-image: url('assets/images/species_ferret_1782138014793.png');">
+                    <div class="panel-content">
+                        <h3>Ferrets</h3>
+                        <p>Advanced management of adrenal disease and insulinomas using the latest therapeutic protocols.</p>
+                    </div>
+                </div>
+                <div class="mammal-panel" style="background-image: url('assets/images/species_rabbit_1782138028153.png');">
+                    <div class="panel-content">
+                        <h3>Rodents & Rabbits</h3>
+                        <p>Specialized gastrointestinal stasis treatment and complex dental surgeries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Nutrition Center -->
+    <section class="page-section bg-secondary">
+        <div class="container text-center reveal">
+            <div class="section-header" style="margin-bottom: 32px;">
+                <span class="subheading">Dietary Science</span>
+                <h2>Nutrition Center</h2>
+                <p>Over 80% of exotic pet illnesses stem from improper nutrition. Our board-certified nutritionists create species-specific dietary plans to ensure optimal health and longevity.</p>
+            </div>
+            <a href="resources.html" class="btn btn-outline">Access Feeding Guides</a>
+        </div>
+    </section>
+
+    <!-- Section 5: Amphibian Care -->
+    <section class="page-section bg-tertiary" style="position: relative; overflow: hidden;">
+        <div class="container">
+            <div class="section-header reveal text-center">
+                <span class="subheading" style="color: var(--color-primary);">Amphibian & Aquatic</span>
+                <h2>Aquatic Exotics</h2>
+                <p>Specialized water quality management, delicate skin care, and environmental assessments for amphibians.</p>
+            </div>
+            
+            <div class="amphibian-layout reveal">
+                <div class="amphibian-image-container">
+                    <img src="assets/images/species_amphibian_exam.png" alt="Amphibian Examination" class="amphibian-floating-img anim-float-slow">
+                    <div class="amphibian-bg-shape"></div>
+                </div>
+                <div class="amphibian-content-box">
+                    <h3>Delicate Ecosystems</h3>
+                    <p>Amphibians require exacting environmental controls. Our state-of-the-art facility provides specialized aquatic habitats with rigorously monitored water parameters.</p>
+                    <ul class="amphibian-features">
+                        <li><span>💧</span> Advanced Water Quality Analysis</li>
+                        <li><span>🦠</span> Cutaneous Disease Treatment</li>
+                        <li><span>🔬</span> Precision Nutritional Supplementation</li>
+                    </ul>
+                    <a href="species-care.html" class="btn btn-primary" style="margin-top: 24px;">Explore Amphibian Services</a>
+                </div>
+            </div>
+        </div>
+        
+        <style>
+            .bg-tertiary { background-color: #f0f7f4; }
+            .dark-mode .bg-tertiary { background-color: #121f1a; }
+            .amphibian-layout {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+                align-items: center;
+                margin-top: 48px;
+            }
+            .amphibian-image-container {
+                position: relative;
+                border-radius: 24px;
+            }
+            .amphibian-bg-shape {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 90%;
+                height: 90%;
+                background: linear-gradient(135deg, #a8e6cf 0%, #dcedc1 100%);
+                border-radius: 50%;
+                z-index: 0;
+                filter: blur(40px);
+                opacity: 0.6;
+            }
+            .dark-mode .amphibian-bg-shape {
+                background: linear-gradient(135deg, #1e3a2f 0%, #2a4c3f 100%);
+            }
+            .amphibian-floating-img {
+                position: relative;
+                z-index: 1;
+                width: 100%;
+                border-radius: 24px;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+                transition: transform 0.5s ease;
+            }
+            .amphibian-floating-img:hover {
+                transform: scale(1.02);
+            }
+            .amphibian-content-box {
+                background: var(--color-surface);
+                padding: 40px;
+                border-radius: 24px;
+                box-shadow: var(--shadow-md);
+                position: relative;
+                z-index: 2;
+                margin-left: -60px; /* Overlap effect */
+                border-left: 4px solid var(--color-primary);
+            }
+            .amphibian-features {
+                list-style: none;
+                padding: 0;
+                margin-top: 24px;
+            }
+            .amphibian-features li {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                margin-bottom: 12px;
+                font-weight: 500;
+            }
+            .anim-float-slow {
+                animation: floatSlow 6s ease-in-out infinite;
+            }
+            @keyframes floatSlow {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+                100% { transform: translateY(0px); }
+            }
+            @media (max-width: 992px) {
+                .amphibian-layout { grid-template-columns: 1fr; }
+                .amphibian-content-box { 
+                    margin-left: 0; 
+                    margin-top: -40px; 
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .amphibian-features {
+                    display: inline-block;
+                    text-align: left;
+                }
+                .amphibian-features li {
+                    align-items: flex-start;
+                }
+            }
+        </style>
+    </section>
+
+    <!-- Section 6: Emergency & Critical Care -->
+    <section class="page-section">
+        <div class="container">
+            <div class="emergency-wrapper reveal">
+                <div class="emergency-content">
+                    <div class="emergency-icon-pulse">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                    </div>
+                    <h2>Emergency & ICU</h2>
+                    <p>Exotic animals are exceptional at hiding illness. When they show symptoms, it is often a critical emergency. Our specialized intensive care unit is equipped with species-specific incubators, oxygen therapy, and advanced monitoring systems.</p>
+                    <div class="emergency-contact-card">
+                        <span class="emergency-label">24/7 EMERGENCY HOTLINE</span>
+                        <a href="tel:1800EXOVETS" class="emergency-number">1-800-EXO-VETS</a>
+                    </div>
+                </div>
+                <div class="emergency-image">
+                    <div class="icu-image-wrapper anim-reveal-slide">
+                        <img src="assets/images/facility_icu_incubator.png" alt="Intensive Care Unit Incubator">
+                        <div class="icu-overlay-badge">
+                            <span class="pulse-dot"></span>
+                            Live Monitoring Active
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .emergency-wrapper {
+                display: flex;
+                background: linear-gradient(to right, var(--color-surface) 50%, var(--color-background) 50%);
+                border-radius: 32px;
+                overflow: hidden;
+                box-shadow: var(--shadow-lg);
+            }
+            .dark-mode .emergency-wrapper {
+                background: linear-gradient(to right, var(--color-surface) 50%, var(--color-background) 50%);
+            }
+            .emergency-content {
+                flex: 1;
+                padding: 60px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background: var(--color-surface);
+            }
+            .emergency-icon-pulse {
+                width: 64px;
+                height: 64px;
+                background-color: #ffeaea;
+                color: #e53935;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 24px;
+                animation: pulseAlert 2s infinite;
+            }
+            .dark-mode .emergency-icon-pulse {
+                background-color: rgba(229, 57, 53, 0.2);
+            }
+            .emergency-contact-card {
+                margin-top: 32px;
+                padding: 24px;
+                background: #fdf2f2;
+                border-radius: 16px;
+                border-left: 4px solid #e53935;
+            }
+            .dark-mode .emergency-contact-card {
+                background: rgba(229, 57, 53, 0.1);
+            }
+            .emergency-label {
+                display: block;
+                font-size: 0.85rem;
+                font-weight: 700;
+                color: #e53935;
+                letter-spacing: 1px;
+                margin-bottom: 8px;
+            }
+            .emergency-number {
+                font-size: 2rem;
+                font-weight: 800;
+                color: var(--color-text);
+                text-decoration: none;
+            }
+            .emergency-image {
+                flex: 1;
+                padding: 40px;
+                background: var(--color-background);
+            }
+            .icu-image-wrapper {
+                position: relative;
+                border-radius: 24px;
+                overflow: hidden;
+                box-shadow: var(--shadow-md);
+            }
+            .icu-image-wrapper img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+            .icu-overlay-badge {
+                position: absolute;
+                bottom: 24px;
+                right: 24px;
+                background: rgba(0, 0, 0, 0.7);
+                color: #fff;
+                padding: 8px 16px;
+                border-radius: 30px;
+                font-size: 0.9rem;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                backdrop-filter: blur(4px);
+            }
+            .pulse-dot {
+                width: 10px;
+                height: 10px;
+                background-color: #4caf50;
+                border-radius: 50%;
+                animation: pulseAlert 1.5s infinite;
+            }
+            @keyframes pulseAlert {
+                0% { box-shadow: 0 0 0 0 rgba(229, 57, 53, 0.4); }
+                70% { box-shadow: 0 0 0 15px rgba(229, 57, 53, 0); }
+                100% { box-shadow: 0 0 0 0 rgba(229, 57, 53, 0); }
+            }
+            .anim-reveal-slide {
+                opacity: 0;
+                transform: translateX(40px);
+                animation: slideInRight 1s ease-out forwards;
+                animation-play-state: paused;
+            }
+            .reveal.active .anim-reveal-slide,
+            .reveal .anim-reveal-slide {
+                animation-play-state: running;
+            }
+            @keyframes slideInRight {
+                to {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+            @media (max-width: 992px) {
+                .emergency-wrapper {
+                    flex-direction: column;
+                    background: var(--color-surface);
+                }
+                .emergency-content { 
+                    padding: 40px; 
+                    align-items: center;
+                    text-align: center;
+                }
+                .emergency-image { padding: 20px; background: var(--color-surface); }
+                .emergency-number {
+                    white-space: nowrap;
+                    font-size: 1.75rem;
+                }
+            }
+        </style>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: 16px;">
+                        <a href="index.html">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M12 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3Z"></path><path d="M19 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M5 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M12 22c-4 0-7-2-7-5 0-3 2-6 7-6s7 3 7 6-3 5-7 5Z"></path></svg>
+                            Exotic<span>Vet</span>
+                        </a>
+                    </div>
+                    <p>A premium veterinary institution dedicated to the scientific advancement of exotic animal medicine and wildlife conservation.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a>
+                        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About the Clinic</a></li>
+                        <li><a href="vet-team.html">Our Specialists</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing & Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Patient Portal</h4>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="appointment-booking.html">Book Online</a></li>
+                        <li><a href="resources.html">Care Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><strong>Emergency:</strong> 1-800-EXO-VETS</p>
+                    <p><strong>Location:</strong> 124 Wildlife Boulevard, Conservation District</p>
+                    <p><strong>Hours:</strong> 24/7 Specialist Availability</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Reptile & Exotic Pet Veterinary Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinary Team | Reptile & Exotic Pet Veterinary Clinic</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;540;550;560;580;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M12 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3Z"></path><path d="M19 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M5 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M12 22c-4 0-7-2-7-5 0-3 2-6 7-6s7 3 7 6-3 5-7 5Z"></path></svg>
+                    Exotic<span>Vet</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li class="has-dropdown">
+                        <a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="species-care.html">Species Care</a></li>
+                    <li><a href="vet-team.html">Vet Team</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn dark-mode-toggle" aria-label="Toggle Dark Mode">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button class="icon-btn rtl-toggle" aria-label="Toggle RTL">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3L4 7l4 4"/><path d="M4 7h16"/><path d="M16 21l4-4-4-4"/><path d="M20 17H4"/></svg>
+                </button>
+                <a href="appointment-booking.html" class="btn btn-outline">Book Appointment</a>
+                <a href="login.html" class="btn btn-primary">Login</a>
+                <button class="hamburger" id="hamburgerToggle" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="off-canvas-menu" id="offCanvasMenu">
+        <nav class="off-canvas-nav">
+            <a href="index.html">Home</a>
+            <a href="home-2.html">Home 2</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="species-care.html">Species Care</a>
+            <a href="vet-team.html">Vet Team</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+            <a href="appointment-booking.html" class="btn btn-accent" style="max-width: 250px; margin-top: 24px;">Book Appointment</a>
+        </nav>
+    </div>
+
+    <!-- Small Hero Banner -->
+    <section class="hero-banner">
+        <div class="container">
+            <h1 class="reveal">Our Medical Experts</h1>
+            <p class="reveal" style="color: var(--text-muted); font-size: 20px;">Board-certified specialists advancing exotic animal medicine.</p>
+        </div>
+    </section>
+
+    <!-- Unique Section 1: Meet the Founders -->
+    <section class="page-section founders-section" style="padding: 120px 0; background-color: var(--surface-color); overflow: hidden;">
+        <div class="container">
+            <div class="section-header reveal text-center" style="margin-bottom: 80px;">
+                <span class="subheading">Executive Leadership</span>
+                <h2>Meet the Founders</h2>
+            </div>
+            <div class="founders-grid">
+                <!-- Founder 1 -->
+                <div class="founder-card reveal">
+                    <div class="f-img-wrap">
+                        <img src="assets/images/dr_sterling.png" alt="Dr. Evelyn Sterling">
+                    </div>
+                    <div class="f-info">
+                        <h3>Dr. Evelyn Sterling, DVM, DABVP</h3>
+                        <p class="title" style="color: var(--color-accent); font-weight: 500; margin-bottom: 16px;">Head of Herpetology</p>
+                        <p>Dr. Sterling is internationally renowned for her pioneering microsurgical techniques on small squamates and amphibians. She holds the record for the smallest successful tumor removal in a dart frog.</p>
+                        <a href="contact.html" class="btn btn-outline" style="margin-top: 16px;">Contact Dr. Sterling</a>
+                    </div>
+                </div>
+                
+                <!-- Founder 2 -->
+                <div class="founder-card reveal" style="transition-delay: 0.15s;">
+                    <div class="f-img-wrap">
+                        <img src="assets/images/dr_halloway.png" alt="Dr. James Halloway">
+                    </div>
+                    <div class="f-info">
+                        <h3>Dr. James Halloway, DVM, DACZM</h3>
+                        <p class="title" style="color: var(--color-accent); font-weight: 500; margin-bottom: 16px;">Director of Zoological Medicine</p>
+                        <p>An expert in complex exotic mammal anesthesiology, Dr. Halloway has developed novel intubation protocols for critically endangered avian and marsupial species worldwide.</p>
+                        <a href="contact.html" class="btn btn-outline" style="margin-top: 16px;">Contact Dr. Halloway</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .founders-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+            .founder-card {
+                background: var(--bg-color);
+                border-radius: 30px;
+                overflow: hidden;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+                border: 1px solid rgba(22, 56, 50, 0.05);
+                display: flex;
+                flex-direction: column;
+                transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.4s ease;
+            }
+            body.dark-mode .founder-card {
+                box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+                border-color: rgba(255,255,255,0.05);
+            }
+            .founder-card:hover {
+                transform: translateY(-15px);
+                box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+                border-color: var(--color-accent);
+            }
+            body.dark-mode .founder-card:hover {
+                box-shadow: 0 30px 60px rgba(199, 167, 91, 0.15);
+            }
+            .f-img-wrap {
+                width: 100%;
+                height: 450px;
+                position: relative;
+                overflow: hidden;
+                background: var(--color-primary);
+            }
+            .f-img-wrap img {
+                width: 100%; 
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.6s ease;
+            }
+            .founder-card:hover .f-img-wrap img {
+                transform: scale(1.08);
+            }
+            .f-info {
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+            }
+            .f-info p:not(.title) {
+                flex-grow: 1;
+            }
+            .f-info .btn {
+                align-self: flex-start;
+            }
+            @media(max-width: 991px) {
+                .f-info h3 {
+                    min-height: 4.5em; /* Keep h3 height uniform so subtitles align */
+                }
+            }
+            @media(max-width: 767px) {
+                .founders-grid {
+                    grid-template-columns: 1fr;
+                }
+                .f-img-wrap { height: 350px; }
+                .f-info h3 { min-height: auto; } /* reset on mobile */
+            }
+        </style>
+    </section>
+
+    <!-- Unique Section 2: Our Specialists -->
+    <section class="page-section specialists-section" style="background-color: var(--color-primary); color: #fff; padding: 120px 0;">
+        <div class="container">
+            <div class="section-header reveal text-center" style="margin-bottom: 80px;">
+                <span class="subheading" style="color: var(--color-accent); border-color: var(--color-accent);">Dedicated Nursing</span>
+                <h2 style="color: #fff;">Specialist Support Team</h2>
+            </div>
+            
+            <div class="masonry-grid">
+                <div class="masonry-item reveal">
+                    <img src="assets/images/avatar_sarah_jenkins.png" alt="Sarah Jenkins">
+                    <div class="glass-overlay">
+                        <h4>Sarah Jenkins, RVT</h4>
+                        <p>Senior Avian Technician</p>
+                    </div>
+                </div>
+                <div class="masonry-item reveal" style="transition-delay: 0.1s;">
+                    <img src="assets/images/avatar_mark_davidson_1782215978754.png" alt="Mark Davidson">
+                    <div class="glass-overlay">
+                        <h4>Mark Davidson</h4>
+                        <p>Herpetology Specialist</p>
+                    </div>
+                </div>
+                <div class="masonry-item reveal" style="transition-delay: 0.2s;">
+                    <img src="assets/images/avatar_elena_rossi_1782215991680.png" alt="Elena Rossi">
+                    <div class="glass-overlay">
+                        <h4>Elena Rossi, RVT</h4>
+                        <p>Mammalian Anesthesia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .masonry-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 24px;
+            }
+            .masonry-item {
+                position: relative;
+                border-radius: 20px;
+                overflow: hidden;
+                aspect-ratio: 3/4;
+                cursor: pointer;
+            }
+            .masonry-item img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.5s ease, filter 0.5s ease;
+                filter: grayscale(20%);
+            }
+            .masonry-item:hover img {
+                transform: scale(1.08);
+                filter: grayscale(0%);
+            }
+            .glass-overlay {
+                position: absolute;
+                bottom: -100px;
+                left: 16px;
+                right: 16px;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                border-radius: 16px;
+                padding: 20px;
+                transition: bottom 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+                text-align: center;
+            }
+            .masonry-item:hover .glass-overlay {
+                bottom: 16px;
+            }
+            .glass-overlay h4 {
+                color: #fff;
+                margin-bottom: 4px;
+                font-size: 18px;
+            }
+            .glass-overlay p {
+                color: var(--color-accent);
+                margin: 0;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            @media(max-width: 991px) {
+                .masonry-grid { grid-template-columns: repeat(2, 1fr); }
+                .masonry-item:nth-child(3) {
+                    grid-column: 1 / -1;
+                    justify-self: center;
+                    width: calc(50% - 12px);
+                }
+            }
+            @media(max-width: 767px) {
+                .masonry-grid { grid-template-columns: 1fr; }
+                .masonry-item:nth-child(3) {
+                    width: 100%;
+                }
+            }
+        </style>
+    </section>
+
+    <!-- Unique Section 3: Core Philosophy Parallax -->
+    <section class="page-section parallax-break" style="position: relative; height: 80vh; min-height: 600px; background-image: url('https://images.unsplash.com/photo-1542385151-efd9000785a0?auto=format&fit=crop&w=1920&q=80'); background-attachment: fixed; background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
+        <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(rgba(22, 56, 50, 0.7), rgba(16, 24, 24, 0.9)); z-index: 1;"></div>
+        <div class="container text-center" style="position: relative; z-index: 2;">
+            <span class="subheading reveal" style="color: var(--color-accent); border-color: var(--color-accent);">Core Philosophy</span>
+            <h2 class="reveal typing-effect" style="color: #fff; font-size: 56px; max-width: 800px; margin: 24px auto;">Pushing the boundaries of zoological medicine every single day.</h2>
+        </div>
+        <style>
+            .typing-effect {
+                opacity: 0;
+                transform: translateY(30px);
+                transition: all 1s ease 0.3s;
+            }
+            .reveal.active .typing-effect {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            @media(max-width: 767px) {
+                .parallax-break h2 {
+                    font-size: 32px !important;
+                    margin: 16px auto !important;
+                }
+                .parallax-break {
+                    background-attachment: scroll !important;
+                    min-height: 400px !important;
+                    height: 60vh !important;
+                }
+            }
+        </style>
+    </section>
+
+    <!-- Unique Section 4: Academic Fellowships -->
+    <section class="page-section fellowships-section" style="padding: 120px 0; background-color: var(--bg-color);">
+        <div class="container">
+            <div class="section-header reveal text-center" style="margin-bottom: 80px;">
+                <span class="subheading">Careers</span>
+                <h2>Academic Fellowships</h2>
+                <p>Join the forefront of exotic animal medical research.</p>
+            </div>
+            
+            <div class="grid grid-cards grid-cols-3" style="gap: 32px;">
+                <div class="float-card reveal">
+                    <div class="fc-icon">🔬</div>
+                    <h3>Research Residency</h3>
+                    <p>A 3-year intensive program focused on surgical innovations in avian and reptilian species.</p>
+                    <a href="contact.html">Apply Now &rarr;</a>
+                </div>
+                <div class="float-card reveal" style="transition-delay: 0.1s;">
+                    <div class="fc-icon">🩺</div>
+                    <h3>Specialist Tech Fellowship</h3>
+                    <p>12-month hands-on clinical rotation in advanced anesthetic monitoring and critical care.</p>
+                    <a href="contact.html">Apply Now &rarr;</a>
+                </div>
+                <div class="float-card reveal" style="transition-delay: 0.2s;">
+                    <div class="fc-icon">📚</div>
+                    <h3>Externship Program</h3>
+                    <p>Short-term shadowing opportunities for 3rd and 4th-year veterinary medicine students.</p>
+                    <a href="contact.html">Apply Now &rarr;</a>
+                </div>
+            </div>
+        </div>
+        <style>
+            .float-card {
+                background: var(--surface-color);
+                padding: 48px 32px;
+                border-radius: 24px;
+                text-align: center;
+                position: relative;
+                border: 1px solid rgba(22, 56, 50, 0.05);
+                transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+                z-index: 1;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+            body.dark-mode .float-card {
+                border-color: rgba(255,255,255,0.05);
+            }
+            .float-card:hover {
+                transform: translateY(-15px);
+                box-shadow: 0 30px 60px rgba(199, 167, 91, 0.15);
+                z-index: 2;
+                border-color: var(--color-accent);
+            }
+            body.dark-mode .float-card:hover {
+                box-shadow: 0 30px 60px rgba(199, 167, 91, 0.05);
+            }
+            .fc-icon {
+                font-size: 48px;
+                margin-bottom: 24px;
+                transition: transform 0.3s ease;
+            }
+            .float-card:hover .fc-icon {
+                transform: scale(1.1);
+            }
+            .float-card h3 {
+                font-size: 24px;
+                margin-bottom: 16px;
+            }
+            .float-card p {
+                margin-bottom: 24px;
+                color: var(--text-muted);
+            }
+            .float-card a {
+                color: var(--color-primary);
+                font-weight: 600;
+                text-decoration: none;
+                display: inline-block;
+                transition: color 0.2s;
+                margin-top: auto;
+            }
+            body.dark-mode .float-card a {
+                color: var(--color-accent);
+            }
+            .float-card a:hover {
+                color: var(--color-accent);
+            }
+            @media(max-width: 991px) {
+                .float-card { transform: none !important; }
+                .float-card h3 { min-height: 2.8em; }
+                .grid-cols-3 > .float-card:nth-child(3) {
+                    grid-column: 1 / -1;
+                    justify-self: center;
+                    width: calc(50% - 16px);
+                }
+            }
+            @media(max-width: 767px) {
+                .grid-cols-3 > .float-card:nth-child(3) {
+                    width: 100%;
+                }
+            }
+        </style>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: 16px;">
+                        <a href="index.html">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M12 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3Z"></path><path d="M19 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M5 8a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2Z"></path><path d="M12 22c-4 0-7-2-7-5 0-3 2-6 7-6s7 3 7 6-3 5-7 5Z"></path></svg>
+                            Exotic<span>Vet</span>
+                        </a>
+                    </div>
+                    <p>A premium veterinary institution dedicated to the scientific advancement of exotic animal medicine and wildlife conservation.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a>
+                        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About the Clinic</a></li>
+                        <li><a href="vet-team.html">Our Specialists</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing & Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Patient Portal</h4>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="appointment-booking.html">Book Online</a></li>
+                        <li><a href="resources.html">Care Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><strong>Emergency:</strong> 1-800-EXO-VETS</p>
+                    <p><strong>Location:</strong> 124 Wildlife Boulevard, Conservation District</p>
+                    <p><strong>Hours:</strong> 24/7 Specialist Availability</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Reptile & Exotic Pet Veterinary Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

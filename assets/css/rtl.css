@@ -1,0 +1,43 @@
+/* ==========================================================================
+   RTL (Right-to-Left) Support
+   ========================================================================== */
+
+html[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Reset alignments */
+html[dir="rtl"] .section-header {
+  text-align: center; /* keep centered headers */
+}
+
+html[dir="rtl"] .main-nav a::after {
+  right: 0;
+  left: auto;
+}
+
+html[dir="rtl"] .hero-content {
+  text-align: center; /* Keep hero centered as per rules */
+}
+
+html[dir="rtl"] .off-canvas-menu {
+  right: auto;
+  left: -100%;
+  transition: left 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+html[dir="rtl"] .off-canvas-menu.active {
+  left: 0;
+}
+
+/* Margin and Padding flips (if needed for specific components) */
+html[dir="rtl"] .nav-actions {
+  /* Ensure icon gap remains correct */
+}
+
+/* Form overrides if added later */
+html[dir="rtl"] input,
+html[dir="rtl"] textarea {
+  text-align: right;
+}
