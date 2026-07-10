@@ -372,7 +372,7 @@ section {
   justify-content: center;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
+  border-radius: 4px;
   transition: all 0.3s;
 }
 
@@ -636,7 +636,7 @@ section {
 /* Small Hero Banner (Other Pages) */
 .hero-banner {
   padding: 60px 0 60px;
-  background-color: var(--surface-color);
+  background-color: var(--color-dark-card);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
   border-bottom: 1px solid rgba(22, 56, 50, 0.1);
   position: relative;
@@ -661,7 +661,11 @@ section {
 }
 
 .hero-banner h1 {
-  color: var(--color-primary);
+  color: #fff !important;
+}
+
+.hero-banner p {
+  color: rgba(255, 255, 255, 0.8) !important;
 }
 
 /* ==========================================================================
