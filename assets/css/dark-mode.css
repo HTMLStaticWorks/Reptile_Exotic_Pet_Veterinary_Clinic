@@ -85,7 +85,7 @@ body.dark-mode .btn-outline {
 
 body.dark-mode .btn-outline:hover {
   background-color: var(--color-secondary);
-  color: var(--color-primary);
+  color: var(--color-primary) !important;
 }
 
 /* Icon button for theme toggle */
